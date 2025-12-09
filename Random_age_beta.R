@@ -9,7 +9,7 @@ library(tidyverse)
 library(gganimate)
 
 alpha <- 5
-beta  <- 7
+beta  <- 8
 N <- 1000
 
 phi_n <- rbeta(n = N, shape1 = alpha, shape2 = beta) + 65

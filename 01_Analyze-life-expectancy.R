@@ -20,13 +20,13 @@ library(broom)
 df_a <- read_csv("./data/Life-expectancy-by-state-long.csv")
 
 # Run a regression model with time coded using a linear term
-mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "Washington", race == "black", sex == "Female"))
+mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "Texas", race == "black", sex == "Female"))
 
 # Regression output
 tidy(mod1)
 
 # Plot the results
-ggplot(data = le_data %>% filter(state == "Washington", race == "black", sex == "Female"),
+ggplot(data = le_data %>% filter(state == "Texas", race == "black", sex == "Female"),
        aes(x = year, y = LE)) + 
   geom_point() +
   theme_bw() +
