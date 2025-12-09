@@ -8,14 +8,14 @@
 library(tidyverse)
 library(gganimate)
 
-alpha <- 2
-beta  <- 4
+alpha <- 5
+beta  <- 8
 N <- 1000
 
 phi_n <- rbeta(n = N, shape1 = alpha, shape2 = beta) + 65
 head(phi_n)
 
-data_df <- tidyr::tibble(phi = phi_n)
+data_df_test <- tidyr::tibble(phi = phi_n)
 summary(data_df$phi)
 
 # Histogram
